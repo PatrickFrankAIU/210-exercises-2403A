@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Forms,Forms,Forms!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <form>
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" placeholder="Enter your first name" name="fname">
+
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" placeholder="Enter your last name" name="lname">
+
+        <label for="tel">Telephone Number:</label>
+        <input type="tel" id="tel" placeholder="Enter your phone number" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <button>Submit</button><br><br><br>
+    </form>
+
+    <form method="post">
+        <div class="container">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="Enter email" pattern=".+@example\.com" name="uname" required>
+
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button>Submit</button><br><br><br>
+
+        </div>
+
+        <p><strong>Do you own a cat or dog?</strong></p>
+
+        <input type="radio" id="pet" name="pet" value="pet">
+        <label for="cat">Cat</label><br>
+        
+        <input type="radio" id="pet" name="pet" value="pet">
+        <label for="dog">Dog</label><br>
+
+        <input type="radio" id="pet" name="pet" value="pet">
+        <label for="both">Both</label>
+
+        <p><strong>What are your hobbies? (Select multiple if applicable) </strong></p>
+
+        <input type="checkbox" id="hobby" name="fishing" value="fishing">
+        <label for="fishing">Fishing</label><br>
+
+        <input type="checkbox" id="hobby" name="cooking" value="cooking">
+        <label for="cooking">Cooking</label><br>
+
+        <input type="checkbox" id="hobby" name="sports" value="sports">
+        <label for="sports">Sports</label><br>
+
+        <input type="checkbox" id="hobby" name="video games" value="video games">
+        <label for="video games">Video Games</label><br>
+<br>
+        <label for="country">Please select your country:</label>
+        <select name="country" id="country">
+            <option value="United States">United States</option>
+            <option value="Japan">Japan</option>
+            <option value="France">France</option>
+        </select>
+<br><br>
+        <label for="browser">Which browser are you using?</label>
+        <input list="browsers" name="browser" id="browser">
+
+        <datalist id="browsers">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist>
+<br><br>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="newsletter">Subscribe to our newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <br>
+            <label for="updates">Receive updates:</label>
+            <input type="checkbox" id="updates" name="updates">
+        </fieldset>
+<br><br>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="imageUpload">Share an image with us :-)</label>
+            <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+            <br>
+            <button type="submit">Upload Image</button>
+
+        <p>Bored? Play with the slider below!</p>
+        <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+
+        <form>
+            <label for="userID">User ID (e.g., AB1234):</label>
+            <input type="text" id="userID" name="userID" pattern="[A-Za-z]{2}\d{4}" title="Two letters followed by four digits (e.g., AB1234)" required>
+            <button type="submit">Submit</button>
+        </form>
+<br><br>
+        <form>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="datetime">Date and Time:</label>
+                <input type="datetime-local" id="datetime" name="datetime" required>
+            </div>
+            <div class="form-group">
+                <label for="week">Week:</label>
+                <input type="week" id="week" name="week">
+            </div>
+            <div class="form-group">
+                <label for="month">Month:</label>
+                <input type="month" id="month" name="month">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+<br><br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" value="#ff0000">
+
+<br><br>
+        <label for="review">Give us feedback!</label><br>
+        <textarea id="review" name="review" rows="4" cols="50" placeholder="Please let us know how you like the site so far"></textarea>
+
+    </form>
+<br>
+
+</body>
+</html>
