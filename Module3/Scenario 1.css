@@ -1,0 +1,53 @@
+/* Style for input focus */
+input:focus {
+    border: 2px solid blue;
+    background-color: #e6f7ff;
+    outline: none;
+}
+
+/* Style for invalid inputs */
+input:invalid {
+    border: 2px solid red;
+    outline: none;
+}
+
+/* Style for valid inputs */
+input:valid {
+    border: 2px solid green;
+    outline: none;
+}
+
+/* Style for checked radio buttons and checkboxes */
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+    color: green;
+    font-weight: bold;
+}
+
+/* Style for the first child in the list */
+ul li:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+/* Style for the last child in the list */
+ul li:last-child {
+    color: blue;
+    font-style: oblique;
+}
+
+/* Style for even items in the list */
+ul li:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* Style for odd items in the list */
+ul li:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Exclude certain items from being styled by other rules */
+ul li:not(:first-child):not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
